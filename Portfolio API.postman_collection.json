@@ -1,0 +1,463 @@
+{
+	"info": {
+		"_postman_id": "c9491f0a-8756-4c47-91ab-242e24ff68bd",
+		"name": "Portfolio API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32002517"
+	},
+	"item": [
+		{
+			"name": "Resume Parsing API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "/home/rohit/Downloads/Anchal_Resume_HR.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/parse-resume",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"parse-resume"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Resume Parsing API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "/home/rohit/Downloads/Anchal_Resume_HR.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/parse-resume",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parse-resume"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.9.5",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Aug 2025 05:56:04 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "322",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"about\": {\n        \"summary\": \"Experienced in Python and Flask.\"\n    },\n    \"education\": [\n        \"MCA, GLA University\"\n    ],\n    \"experience\": [\n        \"Software Engineer at XYZ\"\n    ],\n    \"hero\": {\n        \"bio\": \"A passionate software developer.\",\n        \"name\": \"John Doe\"\n    },\n    \"skills\": [\n        \"Python\",\n        \"Flask\",\n        \"REST APIs\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Translation API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"content\": {\n    \"hero\": {\n      \"name\": \"John\",\n      \"bio\": \"Developer\"\n    },\n    \"skills\": [\"Python\", \"Flask\"]\n  },\n  \"lang\": \"fr\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/translate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"translate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Resume Parsing API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "/home/rohit/Downloads/Anchal_Resume_HR.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/parse-resume",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parse-resume"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.9.5",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Aug 2025 05:56:04 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "322",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"about\": {\n        \"summary\": \"Experienced in Python and Flask.\"\n    },\n    \"education\": [\n        \"MCA, GLA University\"\n    ],\n    \"experience\": [\n        \"Software Engineer at XYZ\"\n    ],\n    \"hero\": {\n        \"bio\": \"A passionate software developer.\",\n        \"name\": \"John Doe\"\n    },\n    \"skills\": [\n        \"Python\",\n        \"Flask\",\n        \"REST APIs\"\n    ]\n}"
+				},
+				{
+					"name": "Translation API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": {\n    \"hero\": {\n      \"name\": \"John\",\n      \"bio\": \"Developer\"\n    },\n    \"skills\": [\"Python\", \"Flask\"]\n  },\n  \"lang\": \"fr\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/translate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"translate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.9.5",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Aug 2025 05:57:36 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"hero\": {\n        \"bio\": \"[FR] Developer\",\n        \"name\": \"[FR] John\"\n    },\n    \"skills\": [\n        \"[FR] Python\",\n        \"[FR] Flask\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Currency Conversion API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "/home/rohit/Downloads/Anchal_Resume_HR.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/get-price?country=US",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get-price"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "US"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Resume Parsing API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "/home/rohit/Downloads/Anchal_Resume_HR.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/parse-resume",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parse-resume"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.9.5",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Aug 2025 05:56:04 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "322",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"about\": {\n        \"summary\": \"Experienced in Python and Flask.\"\n    },\n    \"education\": [\n        \"MCA, GLA University\"\n    ],\n    \"experience\": [\n        \"Software Engineer at XYZ\"\n    ],\n    \"hero\": {\n        \"bio\": \"A passionate software developer.\",\n        \"name\": \"John Doe\"\n    },\n    \"skills\": [\n        \"Python\",\n        \"Flask\",\n        \"REST APIs\"\n    ]\n}"
+				},
+				{
+					"name": "Translation API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": {\n    \"hero\": {\n      \"name\": \"John\",\n      \"bio\": \"Developer\"\n    },\n    \"skills\": [\"Python\", \"Flask\"]\n  },\n  \"lang\": \"fr\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/translate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"translate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.9.5",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Aug 2025 05:57:36 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"hero\": {\n        \"bio\": \"[FR] Developer\",\n        \"name\": \"[FR] John\"\n    },\n    \"skills\": [\n        \"[FR] Python\",\n        \"[FR] Flask\"\n    ]\n}"
+				}
+			]
+		}
+	]
+}
