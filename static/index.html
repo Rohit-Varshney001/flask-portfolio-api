@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Upload Resume</h1>
+    <form id="resumeForm">
+        <input type="file" name="resume" />
+        <button type="submit">Upload</button>
+    </form>
+
+    <script>
+        document.getElementById('resumeForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const res = await fetch('http://localhost:5000/api/parse-resume', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await res.json();
+            console.log(data);
+            alert(JSON.stringify(data, null, 2));
+        });
+    </script>
+</body>
+</html>
